@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.hnair.spring.boot.mybatis.MybatisAutoConfiguration
+
+org.springframework.context.ApplicationListener=
