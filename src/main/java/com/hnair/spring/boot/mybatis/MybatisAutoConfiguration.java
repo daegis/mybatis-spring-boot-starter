@@ -1,7 +1,6 @@
 package com.hnair.spring.boot.mybatis;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.alibaba.fastjson.JSON;
 import com.hnair.spring.boot.mybatis.component.service.impl.CommonServiceImpl;
 import com.hnair.spring.boot.mybatis.component.spi.impl.CommonDaoImpl;
 import lombok.extern.slf4j.Slf4j;
@@ -56,7 +55,6 @@ public class MybatisAutoConfiguration {
         map.put("message", "ok");
         map.put("time", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         map.put("params", properties);
-        log.info("初始化参数：{}", JSON.toJSONString(map));
         return map;
     }
 
